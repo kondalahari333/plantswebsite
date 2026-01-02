@@ -3,38 +3,254 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="project.css">
+    <title>plants website</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- <link rel="stylesheet" href="project1.css"> -->
+     <style>
+    *{
+        margin:0;
+        padding:0;
+        font-family:arial;
+        border:border-box;
+    }
+    .navbar{
+        height:60px;
+        background-color:green;
+        color:white;
+        display:flex;
+        align-items:center;
+        justify-content:space-evenly;
+    }
+    .first{
+        color:white;
+        font-weight:bold;
+        font-size:50px;
+        position:relative;
+    
+    }
+    .navbar1{
+        height:50px;
+        background-color:lightgreen;
+        color:white;
+        display:flex;
+        align-items:center;
+        justify-content:space-evenly;
+    }
+    .border{
+        border:5px solid transparent;
+        font-size:20px;
+    }
+    .border:hover{
+        border:5px solid lightcyan;
+    }
+    .herosection{
+        background-image:url(../../../Downloads/lah.jpg);
+        background-size:cover;
+        height:650px;
+    
+    }
+    .shop-section{
+        display:flex;
+        flex-wrap:wrap;
+        justify-content:space-evenly;
+        background-color:aqua;
+    }
+    .box{
+        border:2px solid black;
+        height:450px;
+        width:23%;
+        background-color:white;
+        padding:20px 0px 15px;
+        margin-top:5px;
+        border:none;
+    
+    }
+    .box-img{
+        height:340px;
+        width:100%;
+        background-size:cover;
+        margin-top:1rem;
+        margin-bottom:1rem;
+        background-size:1rem;
+        background-repeat: no-repeat;
+        background-image:none;
+    }    
+    .large-image{
+        width:100%;
+        max-width:400px;
+        height:auto;
+    }
+    .box-content{
+        margin-left:1rem;
+        margin-right:1rem;
+    }
+    .box-content p{
+        color:white;
+    }
+    .box-content h2{
+        color:green;
+    }
+    .box:hover{
+        border:5px solid  lightgreen;
+    }
+    .footer{
+        margin-top: 15px;
+    }
+    .foot-panel1{
+        background-color:rgb(137, 240, 105);
+        color:white;
+        height:50px;
+        display: flex;
+        justify-content: center;
+        align-items:center;
+        font-size:25px;
+    }
+    .foot-panel2{
+        background-color:rgba(131, 248, 95, 0.938);
+        color:white;
+        border-top:0.5px solid white;
+        height:70px;
+        display: flex;
+        justify-content:center;
+        align-items:center;
+    }
+    .pa{
+        font-weight:bold;
+        font-size:50px;
+    }
+    .foot-panel3{
+        background-color:green;
+        color:white;
+        height:80px;
+        font-size:0.7rem;
+        text-align:center;
+       /* display:flex;
+        align-items: center;
+        justify-content:center;*/
+    }
+    .pages{
+        
+        padding-top: 25px;
+    
+    }
+    .copyright{
+    margin-top:5px
+    }
+</style>
+    
 </head>
 <body>
-    <div class="container">
-        <fieldset id="container">
-            <form name="caluculator">
-                <input id="display" type="text" name="display" readonly>
-               <input class="button digits" type="button" value="7" onclick="caluculator.dispaly.value +='7'">
-               <input class="button digits" type="button" value="8" onclick="caluculator.dispaly.value +='8'">
-               <input class="button digits" type="button" value="9" onclick="caluculator.dispaly.value +='9'">
-               <input class="button mathButton" type="button" value="+" onclick="caluculator.dispaly.value +='+'">
-               <br>
-               <input class="button digits" type="button" value="4" onclick="caluculator.dispaly.value +='4'">
-               <input class="button digits" type="button" value="5" onclick="caluculator.dispaly.value +='5'">
-               <input class="button digits" type="button" value="6" onclick="caluculator.dispaly.value +='6'">
-               <input class="button mathButton" type="button" value="-" onclick="caluculator.dispaly.value +='-'">
-               <br>
-               <input class="button digits" type="button" value="1" onclick="caluculator.dispaly.value +='1'">
-               <input class="button digits" type="button" value="2" onclick="caluculator.dispaly.value +='2'">
-               <input class="button digits" type="button" value="3" onclick="caluculator.dispaly.value +='3'">
-               <input class="button mathButton" type="button" value="x" onclick="caluculator.dispaly.value +='*'">
-               <br>
-               <input id="clearButton" class="button" type="button"  value="c" onclick="caluculator.dispaly.value =''">
-               <input class="button digits" type="button" value="0" onclick="caluculator.dispaly.value +='0'">
-               <input class="button mathButton" type="button" value="=" onclick="caluculator.dispaly.value = eval(caluculator.display.value)">
-               <input class="button mathButton" type="button" value="/" onclick="caluculator.dispaly.value +='/'">
-
-
-            </form>
-        </fieldset>
-    </div>
+    <header>
+        <div class="navbar">
+            <p class="first">PLANTS WEBSITE</p>
+        </div>
+        <div class="navbar1">
+            <div class="nav1 border">
+                <option>home</option>
+            </div>
+            <div class="nav2 border">
+                <option>No of plants</option>
+            </div>
+            <div class="nav3 border">
+                <option>About us</option>
+            </div>
+            <div class="nav4 border">
+                <i class="fa-solid fa-cart-shopping"></i>
+                    cart
+            </div>
+            <div class="nav5 border">
+                Types of plants
+            </div>
+        </div>
+        </header>
+        <div class="herosection">
+        </div>
+        <div class="shop-section">
+        <div class="box1 box">
+            <div class="box-content">
+            <h2>Table rose plant </h2>
+            <div class="box-img" style="background-image:url('/home/apiiit-rkv/Downloads/IMG_20250522_181536.jpg');"><img src="/home/apiiit-rkv/Downloads/IMG_20250522_181536.jpg" class="large-image"></div>
+            </div>
+            <p>see more</p>
+            <p>99 rupees only</p>
+        </div>
+        <div class="box2 box">
+            <div class="box-content">
+            <h2>Rose plant</h2>
+            <div class="box-img" style="background-image:url('/home/apiiit-rkv/Downloads/IMG_20250522_181530.jpg');"><img src="/home/apiiit-rkv/Downloads/IMG_20250522_181530.jpg" class="large-image"></div>
+            </div>
+            <p>see more</p>
+            <p>199 rupees only</p>
+        </div>
+        <div class="box3 box">
+            <div class="box-content">
+            <h2>show case plant</h2>
+            <div class="box-img" style="background-image:url('/home/apiiit-rkv/Downloads/IMG_20250522_181540.jpg');"><img src="/home/apiiit-rkv/Downloads/IMG_20250522_181540.jpg" class="large-image"></div>
+            </div>
+            <p>see more</p>
+            <p>250rupees only</p>
+        </div>
+        <div class="box4 box">
+            <div class="box-content">
+            <h2>hibiscus flower plant</h2>
+            <div class="box-img" style="background-image:url('/home/apiiit-rkv/Downloads/IMG_20250522_181603.jpg');"><img src="/home/apiiit-rkv/Downloads/IMG_20250522_181603.jpg" class="large-image"></div>
+            </div>
+            <p>see more</p>
+            <p>155rupees only</p>
+        </div>
+        <div class="box5 box">
+            <div class="box-content">
+            <h2>mirchi plant</h2>
+            <div class="box-img" style="background-image:url('/home/apiiit-rkv/Downloads/IMG_20250522_181550.jpg');"><img src="/home/apiiit-rkv/Downloads/IMG_20250522_181550.jpg" class="large-image"></div>
+            </div>
+            <p>see more</p>
+            <p>50 rupees only</p>
+        </div>
+        <div class="box6 box">
+            <div class="box-content">
+            <h2>curry leaves plant</h2>
+            <div class="box-img" style="background-image:url('/home/apiiit-rkv/Downloads/IMG_20250522_181611.jpg');"><img src="/home/apiiit-rkv/Downloads/IMG_20250522_181611.jpg" class="large-image"></div>
+            </div>
+            <p>see more</p>
+            <p>49 rupees only</p>
+        </div>
+        <div class="box7 box">
+            <div class="box-content">
+            <h2>cactus plant</h2>
+            <div class="box-img" style="background-image:url('/home/apiiit-rkv/Downloads/IMG_20250522_181524.jpg');"><img src="/home/apiiit-rkv/Downloads/IMG_20250522_181524.jpg" class="large-image"></div>
+            </div>
+            <p>see more</p>
+            <p>199 rupees only</p>
+        </div>
+        <div class="box8 box">
+            <div class="box-content">
+            <h2>Rose bay plant </h2>
+            <div class="box-img" style="background-image:url('/home/apiiit-rkv/Downloads/IMG_20250522_181557.jpg');"><img src="/home/apiiit-rkv/Downloads/IMG_20250522_181557.jpg" class="large-image"></div>
+            </div>
+            <p>see more</p>
+            <p> 199 rupees only</p>
+        </div>
+        
+        </div>
+        <footer>
+            <div class="foot-panel1">
+            <p><i class="fa-solid fa-cart-shopping"></i>Home delivery is also available<i class="fa-solid fa-cart-shopping"></i></p>
     
+            </div>
+            <div class="foot-panel2">
+                <p class="pa"> visit every time plants website for  excitement offers.</p>
+            </div>
+            <div class="foot-panel3">
+                <div class="pages">
+                    <a>conditions of use</a>
+                    <a>privacy notice</a>
+                    <a>Yours adds privacy choices</a>
+                </div>
+                <div class="copyright">
+                    © 1996-2024, plants.com, Inc. or its affiliates
+    
+                </div>
+        </footer>
+
 </body>
 </html>
