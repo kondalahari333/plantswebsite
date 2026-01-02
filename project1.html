@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="project.css">
+</head>
+<body>
+    <div class="container">
+        <fieldset id="container">
+            <form name="caluculator">
+                <input id="display" type="text" name="display" readonly>
+               <input class="button digits" type="button" value="7" onclick="caluculator.dispaly.value +='7'">
+               <input class="button digits" type="button" value="8" onclick="caluculator.dispaly.value +='8'">
+               <input class="button digits" type="button" value="9" onclick="caluculator.dispaly.value +='9'">
+               <input class="button mathButton" type="button" value="+" onclick="caluculator.dispaly.value +='+'">
+               <br>
+               <input class="button digits" type="button" value="4" onclick="caluculator.dispaly.value +='4'">
+               <input class="button digits" type="button" value="5" onclick="caluculator.dispaly.value +='5'">
+               <input class="button digits" type="button" value="6" onclick="caluculator.dispaly.value +='6'">
+               <input class="button mathButton" type="button" value="-" onclick="caluculator.dispaly.value +='-'">
+               <br>
+               <input class="button digits" type="button" value="1" onclick="caluculator.dispaly.value +='1'">
+               <input class="button digits" type="button" value="2" onclick="caluculator.dispaly.value +='2'">
+               <input class="button digits" type="button" value="3" onclick="caluculator.dispaly.value +='3'">
+               <input class="button mathButton" type="button" value="x" onclick="caluculator.dispaly.value +='*'">
+               <br>
+               <input id="clearButton" class="button" type="button"  value="c" onclick="caluculator.dispaly.value =''">
+               <input class="button digits" type="button" value="0" onclick="caluculator.dispaly.value +='0'">
+               <input class="button mathButton" type="button" value="=" onclick="caluculator.dispaly.value = eval(caluculator.display.value)">
+               <input class="button mathButton" type="button" value="/" onclick="caluculator.dispaly.value +='/'">
+
+
+            </form>
+        </fieldset>
+    </div>
+    
+</body>
+</html>
